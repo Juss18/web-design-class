@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flexbox Assignment</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+      gap: 5px;
+    }
+
+    .row {
+      display: flex;
+      gap: 3px;
+    }
+
+    .row:nth-child(1) {
+      justify-content: flex-start;
+    }
+
+    .row:nth-child(2) {
+      justify-content: center;
+    }
+
+    .row:nth-child(3) {
+      justify-content: flex-end;
+    }
+
+    .box {
+      width: 28px;
+      height: 28px;
+      background-color: #159b99;
+      border: 1px solid #20666a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+</html>
